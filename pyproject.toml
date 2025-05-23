@@ -1,0 +1,37 @@
+[project]
+name = "vizpanel"
+version = "0.1.0"
+description = "A python package for data visualization panel"
+readme = "README.md"
+requires-python = ">=3.12"
+license-files = ["LICENSE"]
+authors = [{ name = "randomseed42", email = "randomseed42@protonmail.com" }]
+keywords = [
+  "visualization",
+  "dashboard",
+  "panel",
+]
+classifiers = [
+  "Development Status :: 3 - Alpha",
+  "Intended Audience :: Developers",
+  "Programming Language :: Python :: 3",
+  "Topic :: Software Development :: Libraries",
+]
+dependencies = [
+    "bokeh",
+    "dbframe",
+    "fastapi",
+    "pandas",
+    "plotly",
+    "seaborn",
+    "uvicorn",
+]
+
+[project.urls]
+Homepage = "https://github.com/randomseed42/vizpanel"
+
+[project.scripts]
+vizpanel = "vizpanel.main:main"
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
